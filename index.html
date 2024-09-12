@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeathon Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    
+    <div class="title fade-in" id="associationText">
+        Information Technology Association & IT Coding Club
+    </div>
+    
+    <div class="title fade-in" id="presentsText">
+        presents
+    </div>
+
+    <div class="title" id="highlightText">
+        Codeathon'24
+    </div>
+    
+    <div id="welcomeTextContainer"> <div class="title" id="welcomeText" style="display: none;">
+        Codeathon Registration Portal
+    </div>
+
+
+    <div class="buttons" id="yearButtons" style="display: none;">
+        <button class="button-49" id="for2ndYear" role="button">For 2nd Year</button>
+        <button class="button-49" id="for3rdYear" role="button">For 3rd Year</button>
+    </div>
+
+    <script>
+        setTimeout(function () {
+            document.getElementById('highlightText').style.display = 'none';
+            document.getElementById('associationText').style.display = 'none';
+            document.getElementById('presentsText').style.display = 'none';
+            document.getElementById('welcomeText').style.display = 'block';
+        }, 5000);
+
+
+        setTimeout(function () {
+            document.getElementById('yearButtons').style.display = 'flex';
+        }, 5000);
+
+
+        document.getElementById('for2ndYear').addEventListener('click', function () {
+            window.location.href = 'https://forms.gle/SA3oQGtMtVbPu6dE6';
+        });
+
+        document.getElementById('for3rdYear').addEventListener('click', function () {
+            window.location.href = 'https://forms.gle/zcQf2yK7rwhevNtk6';
+        });
+    </script>
+</body>
+
+</html>
